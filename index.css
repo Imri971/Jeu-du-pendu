@@ -8,6 +8,11 @@ body{
     height: 389px;
 }
 
+.navbar{
+    position: fixed !important;
+    top: 0;
+    z-index: 2;
+}
 p{
     text-align: center;
     letter-spacing: 5px;
@@ -60,4 +65,9 @@ td:hover{
 
 .clavier{
     overflow-x: auto;
+}
+
+@media (max-width: 600px){
+    #canvas {
+        margin: -38px auto -5rem;}
 }
