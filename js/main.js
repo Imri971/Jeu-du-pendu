@@ -5,8 +5,9 @@ let error = document.getElementById("error");
 let canvas = document.getElementById("canvas");
 let result = document.getElementById("result");
 let lost = document.getElementById("lost");
+let table = document.getElementById("table");
 let ctx = canvas.getContext("2d");
-var mots = ["ENCOURAGER", "MAGAZINES", "JEUNE", "PELOUSE", "VOISIN", "CHINOIS", "VOLEUR", "VOITURE", "PERSONNE", "GENTIL"];
+var mots = ["ENCOURAGER", "MAGAZINE", "JEUNE", "PELOUSE", "VOISIN", "CHINOIS", "VOLEUR", "VOITURE", "PERSONNE", "GENTIL"];
 error.value = 0;
 
 //gération d'un nombre aléatoire
@@ -265,11 +266,13 @@ function valide(params) {
     }
     if (error.value == 9) {
         lost.textContent = "Vous avez perdu, le mot secret est: "+all_words;
+        table.style.display ="none";
     } else if (error.value < 0) {
         error.value = 0;
     } else if (lettresTrouvees == all_words.length) {
         
         result.textContent = "Félicitation ! Vous avez trouvé le mot: "+all_words;
+        table.style.display ="none";
     }
 
 }
