@@ -1,0 +1,56 @@
+#canvas{
+    margin: -38px auto 1rem;
+    display: block;
+    width: 329px;
+    height: 389px;
+}
+
+p{
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.pendu_span{
+    height: auto;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;
+    margin: 1rem 6px;
+    font-size: 1.4rem;
+    color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+input[type=text]{
+    width: 3rem;
+    background: #000;
+    color: wheat;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+
+}
+
+ td{
+    height: auto;
+    padding: 1rem;
+    border: 1px solid black;
+    margin: 0 3px;
+    cursor: pointer;
+}
+td:hover{
+    background-color: #dc3545;
+    color: white;
+}
+
+.error_container{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: none;
+}

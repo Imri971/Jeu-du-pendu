@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <title>CANVAS</title>
+</head>
+
+<body class="d-flex flex-wrap">
+    <div class="col-lg-6 col-md-5">
+        <canvas id="canvas" width="500" height="600"></canvas>
+    </div>
+    <div class="container ml-auto col-lg-6 col-md-7 mb-2 mt-5 h-100">
+       
+        <p id="text_pendu" class="d-flex w-100"></p>
+        <hr>
+        <p id="result"></p>
+        <p id="lost"></p>
+        <hr>
+        <button id="clear" class="btn btn-danger m-auto" onclick="clear()">Nouvelle partie</button>
+        <div class="error_container"> Erreurs :<input type="text" id="error"></div>
+    </div>
+    <table class="clavier mb-5 col-lg-9 ml-auto mr-auto container">
+        <tr>
+            <td onclick="valide(this);">A</td>
+            <td onclick="valide(this);">B</td>
+            <td onclick="valide(this);">C</td>
+            <td onclick="valide(this);">D</td>
+            <td onclick="valide(this);">E</td>
+            <td onclick="valide(this);">F</td>
+            <td onclick="valide(this);">G</td>
+            <td onclick="valide(this);">H</td>
+            <td onclick="valide(this);">I</td>
+
+        </tr>
+        <tr>
+
+            <td onclick="valide(this);">J</td>
+            <td onclick="valide(this);">K</td>
+            <td onclick="valide(this);">L</td>
+            <td onclick="valide(this);">M</td>
+            <td onclick="valide(this);">N</td>
+            <td onclick="valide(this);">O</td>
+            <td onclick="valide(this);">P</td>
+            <td onclick="valide(this);">Q</td>
+            <td onclick="valide(this);">R</td>
+
+        </tr>
+        <tr>
+            <td onclick="valide(this);">S</td>
+            <td onclick="valide(this);">T</td>
+            <td onclick="valide(this);">U</td>
+            <td onclick="valide(this);">V</td>
+            <td onclick="valide(this);">W</td>
+            <td onclick="valide(this);">X</td>
+            <td onclick="valide(this);">Y</td>
+            <td onclick="valide(this);">Z</td>
+        </tr>
+    </table>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
