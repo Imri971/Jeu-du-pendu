@@ -7,7 +7,7 @@ let result = document.getElementById("result");
 let lost = document.getElementById("lost");
 let table = document.getElementById("table");
 let ctx = canvas.getContext("2d");
-var mots = ["DOMINER", "RAMPE", "JEUNE", "PELOUSE", "LIRE", "CHINOIS", "VOLEUR", "VOITURE", "TABLEAU", "GENTIL","JAVASCRIPT","CHANGER","ANGLE","MUR","PLAFOND","VITRE","LOIN","SOUS","CARTON"];
+var mots = ["DOMINER", "RAMPE", "JEUNE", "IMAGE", "LIRE", "APRES", "VOLEUR", "VOITURE", "TABLEAU", "GENTIL","CHANGER","ANGLE","MUR","PLAFOND","VITRE","LOIN","SOUS","CARTON"];
 error.value = 0;
 
 //gération d'un nombre aléatoire
