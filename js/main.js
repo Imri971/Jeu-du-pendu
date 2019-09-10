@@ -7,7 +7,7 @@ let result = document.getElementById("result");
 let lost = document.getElementById("lost");
 let table = document.getElementById("table");
 let ctx = canvas.getContext("2d");
-var mots = ["ENCOURAGER", "MAGAZINE", "JEUNE", "PELOUSE", "VOISIN", "CHINOIS", "VOLEUR", "VOITURE", "PERSONNE", "GENTIL"];
+var mots = ["DOMINER", "RAMPE", "JEUNE", "PELOUSE", "LIRE", "CHINOIS", "VOLEUR", "VOITURE", "TABLEAU", "GENTIL","JAVASCRIPT","CHANGER","ANGLE","MUR","PLAFOND","VITRE","LOIN","SOUS","CARTON"];
 error.value = 0;
 
 //gération d'un nombre aléatoire
@@ -184,12 +184,39 @@ function valide(params) {
             ctx.lineTo(350, 370);
             ctx.lineTo(400, 420); //jambe droite
 
+        
+            ctx.stroke();
+            break;
+
+        case 8:
+            ctx.beginPath(); //Cela dit à la machine de se preparer a faire une action 
+            //1
+            ctx.moveTo(150, 500);
+            ctx.lineTo(400, 500);
+
+            ctx.moveTo(200, 200); //Cela signifie de passer à 100px en abscisses et 200 px en ordonnées au départ;
+            ctx.lineTo(200, 500);
+
+            ctx.moveTo(200, 250);
+            ctx.lineTo(250, 200); //soutien superieur de la potence dans le coin
+
+            ctx.moveTo(200, 200);
+            ctx.lineTo(350, 200);
+            ctx.lineTo(350, 250); //ligne du dessus
+
+            ctx.moveTo(370, 250);
+            ctx.arc(350, 250, 20, 0, Math.PI * 2, true); // Cercle extérieur
+
+            ctx.moveTo(350, 270);
+            ctx.lineTo(350, 370);
+            ctx.lineTo(400, 420); //jambe droite
+
             ctx.moveTo(350, 370);
             ctx.lineTo(300, 420); //jambe gauche
 
             ctx.stroke();
-            break;
-        case 8:
+            break;    
+        case 9:
             ctx.beginPath(); //Cela dit à la machine de se preparer a faire une action 
             //1
             ctx.moveTo(150, 500);
@@ -221,7 +248,7 @@ function valide(params) {
 
             ctx.stroke();
             break;
-        case 9:
+        case 10:
             ctx.beginPath(); //Cela dit à la machine de se preparer a faire une action 
             //1
             ctx.moveTo(150, 500);
@@ -264,7 +291,7 @@ function valide(params) {
             ctx.clearRect(10, 10, 600, 600);
             break;
     }
-    if (error.value == 9) {
+    if (error.value == 10) {
         lost.textContent = "Vous avez perdu, le mot secret est: "+all_words;
         table.style.display ="none";
     } else if (error.value < 0) {
